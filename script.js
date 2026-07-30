@@ -3,18 +3,38 @@ async function generateVideo() {
   const result = document.getElementById("result");
 
   if (!prompt.trim()) {
-    result.innerHTML = "<p>⚠️ कृपया पहले अपना वीडियो आइडिया लिखें।</p>";
+    result.innerHTML = "⚠️ पहले अपना वीडियो आइडिया लिखें।";
     return;
   }
 
-  result.innerHTML = "<p>⏳ AI सोच रहा है...</p>";
+  result.innerHTML = "⏳ AI Script बना रहा है...";
 
-  // अभी Demo
-  setTimeout(() => {
+  try {
+    const response = await fetch("/.netlify/functions/generate", {
+      method: "POST",
+      headers: {
+        "Content-Type": "application/json"
+      },
+      body: JSON.stringify({ prompt })
+    });
+
+    const data = await response.json();
+
+    if (data.error) {
+      result.innerHTML = "❌ " + data.error;
+      return;
+    }
+
+    const text =
+      data.candidates?.[0]?.content?.parts?.[0]?.text ||
+      "कोई उत्तर नहीं मिला।";
+
     result.innerHTML = `
-      <h3>🎬 AI Video Plan</h3>
-      <p><b>Idea:</b> ${prompt}</p>
-      <p>✅ अगले स्टेप में Gemini AI जोड़ेंगे, जिससे Script अपने आप बनेगी।</p>
+      <h3>🎬 AI Script</h3>
+      <pre style="white-space:pre-wrap;">${text}</pre>
     `;
-  }, 1500);
+
+  } catch (err) {
+    result.innerHTML = "❌ Error: " + err.message;
+  }
 }
