@@ -3,25 +3,53 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>AI Video Generator</title>
+  <title>Nova AI Video Studio</title>
+
   <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
 
-<header>
-  <h1>🎬 AI Video Generator</h1>
-  <p>Create amazing AI videos with one click.</p>
+<header class="navbar">
+
+<div class="logo">
+🎬 Nova AI
+</div>
+
+<nav>
+<a href="#">Home</a>
+<a href="#">Templates</a>
+<a href="#">Pricing</a>
+<a href="#">Login</a>
+</nav>
+
 </header>
 
-<div class="container">
+<section class="hero">
 
-  <textarea id="prompt" placeholder="अपना वीडियो आइडिया लिखें..."></textarea>
+<h1>
+1 मिनट में AI Video बनाएं
+</h1>
 
-  <button onclick="generateVideo()">🚀 Generate Video</button>
+<p>
+AI Script • AI Image • AI Voice • AI Video
+</p>
 
-  <div id="result"></div>
+<div class="prompt-box">
+
+<textarea
+id="prompt"
+placeholder="अपना वीडियो आइडिया लिखें..."></textarea>
+
+<button onclick="generateVideo()">
+✨ Generate Video
+</button>
 
 </div>
+
+<div id="result"></div>
+
+</section>
 
 <script src="script.js"></script>
 
