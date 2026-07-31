@@ -126,3 +126,79 @@ display:flex;
 justify-content:center;
 
 }
+/* Prompt Box */
+
+.prompt-box{
+background:rgba(255,255,255,.12);
+backdrop-filter:blur(20px);
+padding:25px;
+border-radius:25px;
+box-shadow:0 10px 40px rgba(0,0,0,.25);
+}
+
+.prompt-box textarea{
+width:100%;
+height:180px;
+border:none;
+outline:none;
+resize:none;
+border-radius:18px;
+padding:20px;
+font-size:17px;
+margin-bottom:20px;
+}
+
+.prompt-box button{
+width:100%;
+padding:18px;
+border:none;
+border-radius:15px;
+background:linear-gradient(90deg,#ff4d8d,#ff7a18);
+color:white;
+font-size:18px;
+font-weight:600;
+cursor:pointer;
+transition:.3s;
+}
+
+.prompt-box button:hover{
+transform:translateY(-3px);
+box-shadow:0 10px 25px rgba(255,77,141,.4);
+}
+
+/* Trending Card */
+
+.glass-card{
+width:320px;
+padding:30px;
+border-radius:25px;
+background:rgba(255,255,255,.12);
+backdrop-filter:blur(20px);
+box-shadow:0 10px 40px rgba(0,0,0,.25);
+}
+
+.glass-card h3{
+margin-bottom:20px;
+font-size:24px;
+}
+
+.glass-card ul{
+list-style:none;
+}
+
+.glass-card li{
+padding:12px 0;
+border-bottom:1px solid rgba(255,255,255,.15);
+}
+
+/* Result */
+
+#result{
+width:90%;
+max-width:1200px;
+margin:40px auto;
+padding:25px;
+border-radius:20px;
+background:rgba(255,255,255,.08);
+backdrop-filter:blur(15px);
+}
