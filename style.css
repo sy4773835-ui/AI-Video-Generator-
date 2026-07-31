@@ -207,27 +207,27 @@ backdrop-filter:blur(15px);
 body::before{
 content:"";
 position:fixed;
-width:500px;
-height:500px;
+width:250px;
+height:250px;
 background:#ff4d8d;
-filter:blur(180px);
-top:-150px;
-left:-150px;
-opacity:.35;
-z-index:-2;
+filter:blur(120px);
+top:-120px;
+left:-120px;
+opacity:.18;
+z-index:-1;
 }
 
 body::after{
 content:"";
 position:fixed;
-width:450px;
-height:450px;
+width:250px;
+height:250px;
 background:#00c6ff;
-filter:blur(180px);
-bottom:-150px;
-right:-150px;
-opacity:.35;
-z-index:-2;
+filter:blur(120px);
+bottom:-120px;
+right:-120px;
+opacity:.18;
+z-index:-1;
 }
 
 /* ========= Animation ========= */
