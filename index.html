@@ -1,11 +1,17 @@
 <!DOCTYPE html>
-<html lang="hi">
+<html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Nova AI Video Studio</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Nova AI Video Studio</title>
 
-  <link rel="stylesheet" href="style.css">
+<link rel="stylesheet" href="style.css">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
 </head>
 
 <body>
@@ -17,68 +23,80 @@
 </div>
 
 <nav>
+
 <a href="#">Home</a>
+
 <a href="#">Templates</a>
+
 <a href="#">Pricing</a>
+
+<a href="#">Blog</a>
+
 <a href="#">Login</a>
+
 </nav>
 
 </header>
 
 <section class="hero">
 
+<div class="hero-left">
+
 <h1>
-1 मिनट में AI Video बनाएं
+Create Viral AI Videos
+in One Click
 </h1>
 
 <p>
-AI Script • AI Image • AI Voice • AI Video
+
+Generate AI Script, AI Images,
+Voice and HD Video instantly.
+
 </p>
 
 <div class="prompt-box">
 
-<textarea
-id="prompt"
-placeholder="अपना वीडियो आइडिया लिखें..."></textarea>
+<textarea id="prompt"
+placeholder="Describe your video idea..."></textarea>
 
 <button onclick="generateVideo()">
-✨ Generate Video
+
+✨ Generate AI Video
+
 </button>
 
 </div>
 
+</div>
+
+<div class="hero-right">
+
+<div class="glass-card">
+
+<h3>🔥 Trending</h3>
+
+<ul>
+
+<li>Facts Video</li>
+
+<li>Horror Story</li>
+
+<li>Motivation</li>
+
+<li>Mythology</li>
+
+<li>Kids Story</li>
+
+</ul>
+
+</div>
+
+</div>
+
+</section>
+
 <div id="result"></div>
 
-</section>
-<section class="features">
-
-<h2>✨ AI Tools</h2>
-
-<div class="cards">
-
-<div class="card">
-<h3>🤖 AI Script</h3>
-<p>AI आपके लिए वायरल स्क्रिप्ट बनाएगा।</p>
-</div>
-
-<div class="card">
-<h3>🖼️ AI Images</h3>
-<p>एक क्लिक में AI Images तैयार करें।</p>
-</div>
-
-<div class="card">
-<h3>🎙️ AI Voice</h3>
-<p>Natural Hindi और English Voice.</p>
-</div>
-
-<div class="card">
-<h3>🎬 AI Video</h3>
-<p>Images + Voice से Video बनाएं।</p>
-</div>
-
-</div>
-
-</section>
 <script src="script.js"></script>
 
 </body>
