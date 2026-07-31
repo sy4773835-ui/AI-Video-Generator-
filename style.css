@@ -296,3 +296,25 @@ justify-content:center;
 }
 
 }
+/* Quick Tags */
+
+.quick-tags{
+display:flex;
+flex-wrap:wrap;
+gap:10px;
+margin-bottom:18px;
+}
+
+.quick-tags span{
+background:rgba(255,255,255,.15);
+padding:10px 16px;
+border-radius:30px;
+font-size:14px;
+cursor:pointer;
+transition:.3s;
+}
+
+.quick-tags span:hover{
+background:#ff4d8d;
+transform:translateY(-3px);
+}
